@@ -13,6 +13,7 @@
 		E8C531C52883EE6D0095FAAC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C531C32883EE6D0095FAAC /* Home.storyboard */; };
 		E8C531C72883EE6F0095FAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C531C62883EE6F0095FAAC /* Assets.xcassets */; };
 		E8C531CA2883EE6F0095FAAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C531C82883EE6F0095FAAC /* LaunchScreen.storyboard */; };
+		E8C531D32883FBA60095FAAC /* FloatingButtonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C531D22883FBA60095FAAC /* FloatingButtonListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E8C531C62883EE6F0095FAAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8C531C92883EE6F0095FAAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8C531CB2883EE6F0095FAAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C531D22883FBA60095FAAC /* FloatingButtonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				E8C531C12883EE6D0095FAAC /* HomeViewController.swift */,
+				E8C531D22883FBA60095FAAC /* FloatingButtonListViewController.swift */,
 				E8C531C32883EE6D0095FAAC /* Home.storyboard */,
 			);
 			path = HomeScene;
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C531D32883FBA60095FAAC /* FloatingButtonListViewController.swift in Sources */,
 				E8C531C22883EE6D0095FAAC /* HomeViewController.swift in Sources */,
 				E8C531BE2883EE6D0095FAAC /* AppDelegate.swift in Sources */,
 				E8C531C02883EE6D0095FAAC /* SceneDelegate.swift in Sources */,

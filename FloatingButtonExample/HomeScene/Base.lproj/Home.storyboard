@@ -11,7 +11,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="FloatingButtonExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="FloatingButtonExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,6 +27,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="add_button"/>
+                                <connections>
+                                    <action selector="didTapAddButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URh-Vo-fWn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,6 +47,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="35" y="85"/>
+        </scene>
+        <!--Floating Button List View Controller-->
+        <scene sceneID="6II-CY-CO0">
+            <objects>
+                <viewController storyboardIdentifier="FloatingButtonListViewController" id="xMi-Re-L46" customClass="FloatingButtonListViewController" customModule="FloatingButtonExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k8l-mg-eE5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uoI-AI-qRK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mAz-Qk-vPi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4x-rz-bdX">
+                                <rect key="frame" x="324" y="772" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="7eG-Wx-k8z"/>
+                                    <constraint firstAttribute="height" constant="60" id="vr6-12-JzV"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="add_button"/>
+                                <connections>
+                                    <action selector="didTapAddButton:" destination="xMi-Re-L46" eventType="touchUpInside" id="ATm-eR-aT7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M4A-D4-5Md"/>
+                        <constraints>
+                            <constraint firstItem="uoI-AI-qRK" firstAttribute="top" secondItem="k8l-mg-eE5" secondAttribute="top" id="6e0-9D-6CU"/>
+                            <constraint firstAttribute="trailing" secondItem="uoI-AI-qRK" secondAttribute="trailing" id="Itf-he-QiH"/>
+                            <constraint firstItem="M4A-D4-5Md" firstAttribute="trailing" secondItem="N4x-rz-bdX" secondAttribute="trailing" constant="30" id="JLs-TS-Ge6"/>
+                            <constraint firstItem="uoI-AI-qRK" firstAttribute="leading" secondItem="k8l-mg-eE5" secondAttribute="leading" id="RE5-NY-1DN"/>
+                            <constraint firstItem="M4A-D4-5Md" firstAttribute="bottom" secondItem="N4x-rz-bdX" secondAttribute="bottom" constant="30" id="cGL-gF-kzt"/>
+                            <constraint firstAttribute="bottom" secondItem="uoI-AI-qRK" secondAttribute="bottom" id="f2G-zN-xXf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCE-bc-lQc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="84"/>
         </scene>
     </scenes>
     <resources>
