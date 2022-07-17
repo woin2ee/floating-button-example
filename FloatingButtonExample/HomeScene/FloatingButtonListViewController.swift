@@ -15,6 +15,8 @@ final class FloatingButtonListViewController: UIViewController {
         didSet { buttonConstraints.sort { Int($0.identifier!)! < Int($1.identifier!)! } }
     }
     
+    // MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setConstraintsZero()
@@ -25,9 +27,14 @@ final class FloatingButtonListViewController: UIViewController {
         floatSubButtons()
     }
     
+    // MARK: - Interaction
+    
     @IBAction func didTapAddButton(_ sender: UIButton) {
+        self.dismiss(animated: true)
         foldSubButtons()
     }
+    
+    // MARK: - Private
     
     private func setConstraintsZero() {
         buttonConstraints.forEach { constraint in
@@ -65,9 +72,7 @@ final class FloatingButtonListViewController: UIViewController {
                 }
                 self.view.layoutIfNeeded()
             },
-            completion: { _ in
-                self.dismiss(animated: false)
-            }
+            completion: nil
         )
     }
 }
