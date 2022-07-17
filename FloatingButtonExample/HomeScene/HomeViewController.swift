@@ -20,6 +20,6 @@ final class HomeViewController: UIViewController {
         floatingButtonListVC.modalTransitionStyle = .crossDissolve
         floatingButtonListVC.modalPresentationStyle = .overCurrentContext
         
-        present(floatingButtonListVC, animated: true)
+        present(floatingButtonListVC, animated: false)
     }
 }

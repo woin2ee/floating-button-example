@@ -64,6 +64,51 @@
                                 </view>
                                 <blurEffect style="regular"/>
                             </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfN-cL-6xL">
+                                <rect key="frame" x="329" y="707" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="caa-1s-3kr"/>
+                                    <constraint firstAttribute="height" constant="50" id="iDO-NR-YYI"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="food1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="723-36-bO8">
+                                <rect key="frame" x="329" y="637" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="4zh-z6-cJU"/>
+                                    <constraint firstAttribute="height" constant="50" id="SDq-jj-ixC"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="food2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTr-TP-mgJ">
+                                <rect key="frame" x="329" y="567" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="57E-hI-pks"/>
+                                    <constraint firstAttribute="width" constant="50" id="YlG-Yi-OlY"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="food3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTh-hn-dik">
+                                <rect key="frame" x="329" y="497" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="GUx-ix-zzh"/>
+                                    <constraint firstAttribute="height" constant="50" id="OoS-XC-X6f"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="food4"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXs-dJ-s2k">
+                                <rect key="frame" x="329" y="427" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="hB7-Qj-2WU"/>
+                                    <constraint firstAttribute="height" constant="50" id="q0t-ZI-Vtz"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="food5"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4x-rz-bdX">
                                 <rect key="frame" x="324" y="772" width="60" height="60"/>
                                 <constraints>
@@ -80,13 +125,30 @@
                         <viewLayoutGuide key="safeArea" id="M4A-D4-5Md"/>
                         <constraints>
                             <constraint firstItem="uoI-AI-qRK" firstAttribute="top" secondItem="k8l-mg-eE5" secondAttribute="top" id="6e0-9D-6CU"/>
+                            <constraint firstItem="N4x-rz-bdX" firstAttribute="centerX" secondItem="723-36-bO8" secondAttribute="centerX" id="A98-ZB-RPS"/>
+                            <constraint firstItem="N4x-rz-bdX" firstAttribute="centerY" secondItem="nTh-hn-dik" secondAttribute="centerY" constant="280" identifier="4" id="CDr-4K-PBu"/>
                             <constraint firstAttribute="trailing" secondItem="uoI-AI-qRK" secondAttribute="trailing" id="Itf-he-QiH"/>
                             <constraint firstItem="M4A-D4-5Md" firstAttribute="trailing" secondItem="N4x-rz-bdX" secondAttribute="trailing" constant="30" id="JLs-TS-Ge6"/>
+                            <constraint firstItem="N4x-rz-bdX" firstAttribute="centerY" secondItem="NTr-TP-mgJ" secondAttribute="centerY" constant="210" identifier="3" id="PGs-7K-VOe"/>
                             <constraint firstItem="uoI-AI-qRK" firstAttribute="leading" secondItem="k8l-mg-eE5" secondAttribute="leading" id="RE5-NY-1DN"/>
+                            <constraint firstItem="N4x-rz-bdX" firstAttribute="centerX" secondItem="EXs-dJ-s2k" secondAttribute="centerX" id="RYc-on-oSp"/>
+                            <constraint firstItem="N4x-rz-bdX" firstAttribute="centerY" secondItem="xfN-cL-6xL" secondAttribute="centerY" constant="70" identifier="1" id="Sra-oc-bdm"/>
                             <constraint firstItem="M4A-D4-5Md" firstAttribute="bottom" secondItem="N4x-rz-bdX" secondAttribute="bottom" constant="30" id="cGL-gF-kzt"/>
                             <constraint firstAttribute="bottom" secondItem="uoI-AI-qRK" secondAttribute="bottom" id="f2G-zN-xXf"/>
+                            <constraint firstItem="N4x-rz-bdX" firstAttribute="centerY" secondItem="EXs-dJ-s2k" secondAttribute="centerY" constant="350" identifier="5" id="hNL-Oz-LnJ"/>
+                            <constraint firstItem="N4x-rz-bdX" firstAttribute="centerY" secondItem="723-36-bO8" secondAttribute="centerY" constant="140" identifier="2" id="jbu-wZ-MR7"/>
+                            <constraint firstItem="N4x-rz-bdX" firstAttribute="centerX" secondItem="nTh-hn-dik" secondAttribute="centerX" id="kQH-LY-UMj"/>
+                            <constraint firstItem="N4x-rz-bdX" firstAttribute="centerX" secondItem="NTr-TP-mgJ" secondAttribute="centerX" id="mnU-1W-EFW"/>
+                            <constraint firstItem="N4x-rz-bdX" firstAttribute="centerX" secondItem="xfN-cL-6xL" secondAttribute="centerX" id="qkR-LI-XJc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="buttonConstraints" destination="Sra-oc-bdm" collectionClass="NSMutableArray" id="kOo-iS-J7e"/>
+                        <outletCollection property="buttonConstraints" destination="CDr-4K-PBu" collectionClass="NSMutableArray" id="R7f-l2-Jiy"/>
+                        <outletCollection property="buttonConstraints" destination="PGs-7K-VOe" collectionClass="NSMutableArray" id="JsY-DN-5FF"/>
+                        <outletCollection property="buttonConstraints" destination="hNL-Oz-LnJ" collectionClass="NSMutableArray" id="sir-Wk-JCd"/>
+                        <outletCollection property="buttonConstraints" destination="jbu-wZ-MR7" collectionClass="NSMutableArray" id="c6C-A0-Tu6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCE-bc-lQc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,6 +157,11 @@
     </scenes>
     <resources>
         <image name="add_button" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="food1" width="256" height="256"/>
+        <image name="food2" width="256" height="256"/>
+        <image name="food3" width="256" height="256"/>
+        <image name="food4" width="256" height="256"/>
+        <image name="food5" width="256" height="256"/>
         <image name="home_background" width="390" height="844"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
